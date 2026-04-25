@@ -1,15 +1,14 @@
 #pragma once
 #include <filesystem>
-#include <vector>
 #include <optional>
+#include <vector>
 
 #include "units.hpp"
 
 namespace reja {
 class Manager {
    public:
-    explicit Manager(std::vector<Task> tasks) : tasks_(std::move(tasks)) {
-    }
+    explicit Manager(std::vector<Task> tasks) : tasks_(std::move(tasks)) {}
     explicit Manager(const std::filesystem::path& config_path);
     auto addTask(Task task) -> void;
     auto removeTask(const Task& task) -> void;
