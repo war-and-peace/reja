@@ -19,3 +19,7 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+# IDE folder
+cmake-build-debug/
+cmake-build-release/
